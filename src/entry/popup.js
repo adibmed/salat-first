@@ -1,7 +1,8 @@
 import Vue from "vue";
 import App from "../view/popup.vue";
 import router from "../router";
-/* eslint-disable no-new */
+import "../index.css";
+
 new Vue({
   el: "#app",
   router,
