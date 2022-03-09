@@ -3,19 +3,21 @@ import NavBar from "../components/NavBar.vue";
 import AsideMenu from "../components/AsideMenu.vue";
 export default {
   name: "popupView",
+
+  components: { NavBar, AsideMenu },
+
   data() {
     return {
       msg: "popup",
     };
   },
-  components: { NavBar, AsideMenu },
 };
 </script>
 
 <template>
   <div class="default w-96 bg-blue-500">
     <nav-bar />
-    <aside-menu />
+    <aside-menu v-if="false" />
 
     <!-- <router-view /> -->
   </div>
