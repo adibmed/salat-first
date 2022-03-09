@@ -1,6 +1,10 @@
 <script>
 import NavBar from "../components/NavBar.vue";
 import AsideMenu from "../components/AsideMenu.vue";
+
+import { useSettingsStore } from "../store/settings";
+import { mapActions } from "pinia";
+
 export default {
   name: "popupView",
 
@@ -10,6 +14,19 @@ export default {
     return {
       msg: "popup",
     };
+  },
+
+  mounted() {
+    this.getCities();
+    console.log("🔥 ");
+  },
+
+  updated() {
+    console.log("🔥 ");
+  },
+
+  methods: {
+    ...mapActions(useSettingsStore, ["getCities"]),
   },
 };
 </script>

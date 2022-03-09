@@ -7,10 +7,19 @@
 
 <script>
 import HelloWorld from "@/components/HelloWorld.vue";
-
+import { useSettingsStore } from "../store/settings";
+import { mapActions } from "pinia";
 export default {
   name: "App",
   components: { HelloWorld },
+
+  mounted() {
+    console.log("🔥 ");
+    this.getCities();
+  },
+  methods: {
+    ...mapActions(useSettingsStore, ["getCities"]),
+  },
 };
 </script>
 
