@@ -34,7 +34,7 @@ export default {
 <template>
   <div class="default w-96 bg-blue-500">
     <nav-bar />
-    <aside-menu v-if="false" />
+    <aside-menu v-if="true" />
 
     <!-- <router-view /> -->
   </div>
