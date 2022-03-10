@@ -30,8 +30,11 @@ export default {
       <icon :path="icons.mdiMenu" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>
     <div class="text-lg">صلاة</div>
-    <button>
-      <icon :path="icons.mdiCogOutline" :h="'w-8'" :w="'w-8'" :size="24" />
-    </button>
+
+    <router-link :to="{ name: 'Settings' }">
+      <button>
+        <icon :path="icons.mdiCogOutline" :h="'w-8'" :w="'w-8'" :size="24" />
+      </button>
+    </router-link>
   </nav>
 </template>

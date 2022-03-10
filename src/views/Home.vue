@@ -3,8 +3,9 @@ import DayHadith from "../components/DayHadith.vue";
 import DaySwitcher from "../components/DaySwitcher.vue";
 import HomeHeader from "../components/HomeHeader.vue";
 import TimesList from "../components/TimesList.vue";
+import DayDikr from "../components/DayDikr.vue";
 export default {
-  components: { HomeHeader, DaySwitcher, TimesList, DayHadith },
+  components: { HomeHeader, DaySwitcher, TimesList, DayHadith, DayDikr },
 };
 </script>
 
@@ -14,5 +15,6 @@ export default {
     <day-switcher />
     <times-list />
     <day-hadith />
+    <day-dikr />
   </div>
 </template>
