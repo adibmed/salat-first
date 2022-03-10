@@ -5,8 +5,8 @@ export default {};
 <template>
   <div class="px-1 py-4">
     <div class="bg-gray-800 rounded-md">
-      <div class="text-center bg-gray-700 text-lg rounded-t-md text-white">
-        title
+      <div class="text-center bg-gray-700 text-lg rounded-t-md text-white py-1">
+        {{ $t("today_dikr") }}
       </div>
       <div class="text-white text-center p-1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint amet

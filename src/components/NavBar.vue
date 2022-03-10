@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-  <nav class="h-12 bg-white flex items-center justify-between">
+  <nav class="h-12 flex items-center justify-between">
     <button @click="toggleAsideMenu">
       <icon :path="icons.mdiMenu" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>

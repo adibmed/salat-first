@@ -1,0 +1,11 @@
+{
+    "description": "Arabic",
+    "al_fajr": "الفجر",
+    "al_dhuhr": "الظهر",
+    "al_asr": "العصر",
+    "al_maghrib": "المغرب",
+    "al_isha": "العشاء",
+    "al_shurooq": "الشروق",
+    "today_hadith": "حديث اليوم",
+    "today_dikr": "ذكر اليوم"
+}

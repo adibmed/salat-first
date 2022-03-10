@@ -3,7 +3,7 @@
   "name": "__MSG_extName__",
   "homepage_url": "http://localhost:8080/",
   "description": "A Vue Browser Extension",
-  "default_locale": "en",
+  "default_locale": "ar",
   "permissions": [
     "<all_urls>",
     "*://*/*"
