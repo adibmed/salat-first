@@ -25,14 +25,15 @@ export default {
 </script>
 
 <template>
-  <nav class="h-12 flex items-center justify-between">
-    <button @click="toggleAsideMenu">
+  <nav
+    class="h-12 flex items-center justify-between absolute top-0 left-0 w-full z-50"
+  >
+    <button class="text-gray-200" @click="toggleAsideMenu">
       <icon :path="icons.mdiMenu" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>
-    <div class="text-lg">صلاة</div>
 
     <router-link :to="{ name: 'Settings' }">
-      <button>
+      <button class="text-gray-200">
         <icon :path="icons.mdiCogOutline" :h="'w-8'" :w="'w-8'" :size="24" />
       </button>
     </router-link>

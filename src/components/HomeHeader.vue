@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="h-36 w-full py-4 relative" :style="headerStyle">
+  <div class="h-44 w-full py-4 relative pt-12" :style="headerStyle">
     <div
       class="bg-black bg-opacity-10 absolute top-0 left-0 w-full h-full z-0"
     ></div>
