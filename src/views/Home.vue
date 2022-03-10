@@ -1,15 +1,18 @@
 <script>
+import DayHadith from "../components/DayHadith.vue";
 import DaySwitcher from "../components/DaySwitcher.vue";
 import HomeHeader from "../components/HomeHeader.vue";
 import TimesList from "../components/TimesList.vue";
-export default { components: { HomeHeader, DaySwitcher, TimesList } };
+export default {
+  components: { HomeHeader, DaySwitcher, TimesList, DayHadith },
+};
 </script>
 
 <template>
-  <div class="h-full w-full">
+  <div class="h-full w-full bg-gray-900">
     <home-header />
     <day-switcher />
     <times-list />
-    <h1>This is a home page</h1>
+    <day-hadith />
   </div>
 </template>

@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <div class="bg-gray-900">
+  <div class="bg-gray-900 pt-2">
     <ul>
       <times-item v-for="(i, key) in 6" :key="key" />
     </ul>

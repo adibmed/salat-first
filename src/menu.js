@@ -1,6 +1,5 @@
 import {
   mdiAccountCircle,
-  mdiDesktopMac,
   mdiGithub,
   mdiLock,
   mdiAlertCircle,

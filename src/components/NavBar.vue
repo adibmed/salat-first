@@ -29,7 +29,7 @@ export default {
     <button @click="toggleAsideMenu">
       <icon :path="icons.mdiMenu" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>
-    <div>صلاة</div>
+    <div class="text-lg">صلاة</div>
     <button>
       <icon :path="icons.mdiCogOutline" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>
