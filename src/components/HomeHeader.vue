@@ -13,7 +13,7 @@ export default {
 <template>
   <div class="h-36 w-full bg-white relative" :style="headerStyle">
     <div class="h-full w-full flex flex-col items-center pt-8">
-      <div class="text-2xl text-white">Al Fajr</div>
+      <div class="text-2xl text-white">{{ $t("message") }}</div>
       <div class="text-2xl text-white">-02:35:13</div>
     </div>
 
