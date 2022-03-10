@@ -17,7 +17,6 @@ export default {
 
   mounted() {
     this.getCities();
-    // console.log("🔥 ");
   },
 
   computed: {
