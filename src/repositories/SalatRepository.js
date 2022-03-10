@@ -1,8 +1,12 @@
 import Client from "./Clients/AxiosClient";
-const resource = "/times/today.json?city=khenifra";
+const resource =
+  "timingsByCity?city=Dubai&country=United%20Arab%20Emirates&method=8";
 
 export default {
   getCities() {
+    return Client.get(resource);
+  },
+  getTimes() {
     return Client.get(resource);
   },
   get() {

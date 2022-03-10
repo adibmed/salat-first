@@ -26,14 +26,14 @@ export default {
 
 <template>
   <nav
-    class="h-12 flex items-center justify-between absolute top-0 left-0 w-full z-50"
+    class="h-12 flex items-center justify-between absolute top-0 left-0 w-full z-50 px-2"
   >
-    <button class="text-gray-200" @click="toggleAsideMenu">
+    <button class="text-gray-200 hover:text-white" @click="toggleAsideMenu">
       <icon :path="icons.mdiMenu" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>
 
     <router-link :to="{ name: 'Settings' }">
-      <button class="text-gray-200">
+      <button class="text-gray-200 hover:text-white">
         <icon :path="icons.mdiCogOutline" :h="'w-8'" :w="'w-8'" :size="24" />
       </button>
     </router-link>

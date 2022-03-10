@@ -2,7 +2,7 @@
 import NavBar from "../components/NavBar.vue";
 import AsideMenu from "../components/AsideMenu.vue";
 import menuFile from "@/menu.js";
-import { useSettingsStore } from "../store/settings";
+import { useSalatStore } from "../store/salat";
 import { mapActions } from "pinia";
 export default {
   name: "popupView",
@@ -15,10 +15,6 @@ export default {
     };
   },
 
-  mounted() {
-    this.getCities();
-  },
-
   computed: {
     menu() {
       return menuFile;
@@ -26,7 +22,11 @@ export default {
   },
 
   methods: {
-    ...mapActions(useSettingsStore, ["getCities"]),
+    ...mapActions(useSalatStore, ["getTodayTimes"]),
+  },
+
+  mounted() {
+    this.getTodayTimes();
   },
 };
 </script>

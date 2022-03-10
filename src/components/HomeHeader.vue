@@ -19,7 +19,7 @@ export default {
       class="bg-black bg-opacity-10 absolute top-0 left-0 w-full h-full z-0"
     ></div>
     <div class="h-full w-full flex flex-col items-center z-10 absolute">
-      <div class="text-2xl text-white">{{ $t("al_maghrib") }}</div>
+      <div class="text-2xl text-white">{{ $t("maghrib") }}</div>
       <div class="text-2xl text-white">-02:35:13</div>
     </div>
     <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">

@@ -1,9 +1,13 @@
 <script>
 import Icon from "./Icon.vue";
 import { mdiChevronLeft, mdiChevronRight } from "@mdi/js";
+import { useSalatStore } from "../store/salat";
+import { mapState } from "pinia";
+
 export default {
   components: { Icon },
   computed: {
+    ...mapState(useSalatStore, ["hijriDate", "gregorianDate"]),
     icons() {
       return {
         mdiChevronLeft,
@@ -35,8 +39,8 @@ export default {
     </button>
 
     <div class="flex-1 flex flex-col items-center justify-center text-white">
-      <div class="text-base">Saturday 12 March 2022</div>
-      <div>23 Febray 1923</div>
+      <div class="text-base">{{ hijriDate }}</div>
+      <div>{{ gregorianDate }}</div>
     </div>
     <button
       @click="nextDay"
