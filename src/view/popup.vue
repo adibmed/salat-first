@@ -36,8 +36,7 @@ export default {
   <div class="default w-96 bg-blue-500">
     <nav-bar />
     <aside-menu :menu="menu" />
-
-    <!-- <router-view /> -->
+    <router-view />
   </div>
 </template>
 
