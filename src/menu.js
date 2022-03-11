@@ -5,7 +5,7 @@ import {
   mdiAlertCircle,
   mdiMonitorShimmer,
   mdiSquareEditOutline,
-  mdiTable,
+  mdiHome,
   mdiViewList,
   mdiTelevisionGuide,
   mdiResponsive,
@@ -16,9 +16,9 @@ export default [
   "General",
   [
     {
-      to: "/tables",
-      label: "Tables",
-      icon: mdiTable,
+      to: "/",
+      label: "Home",
+      icon: mdiHome,
       updateMark: true,
     },
     {
