@@ -1,7 +1,8 @@
 <script>
 import Location from "./Location.vue";
+import Timer from "./Timer.vue";
 export default {
-  components: { Location },
+  components: { Location, Timer },
   computed: {
     headerStyle() {
       return `
@@ -18,9 +19,11 @@ export default {
     <div
       class="bg-black bg-opacity-10 absolute top-0 left-0 w-full h-full z-0"
     ></div>
-    <div class="h-full w-full flex flex-col items-center z-10 absolute">
-      <div class="text-2xl text-white">{{ $t("maghrib") }}</div>
-      <div class="text-2xl text-white">-02:35:13</div>
+    <div
+      class="h-full w-full flex flex-col items-center z-10 absolute top-0 left-0 pt-12"
+    >
+      <div class="text-3xl text-white">{{ $t("maghrib") }}</div>
+      <timer />
     </div>
     <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
       <location />

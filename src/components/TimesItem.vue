@@ -11,7 +11,6 @@ export default {
       type: String,
       required: true,
     },
-    isActive: Boolean,
   },
   components: {
     Icon,
@@ -22,10 +21,13 @@ export default {
         mdiBell,
       };
     },
-    activeClass: () => "bg-gray-500",
+    activeClass: () => "bg-gray-700",
 
     translatedTitle() {
       return this.$t(this.title.toLowerCase());
+    },
+    isActive() {
+      return this.time === "06:32";
     },
   },
 };
@@ -33,12 +35,12 @@ export default {
 
 <template>
   <li
-    class="flex items-center justify-between py-0.5 px-2"
-    :class="{ isActive: activeClass }"
+    class="flex items-center justify-between py-0.5 px-4"
+    :class="isActive ? activeClass : ''"
   >
     <span class="text-lg text-white">{{ translatedTitle }}</span>
     <div class="flex items-center">
-      <div class="text-lg px-2 text-white">{{ time }}</div>
+      <div class="text-base px-2 text-white">{{ time }}</div>
       <div class="text-yellow-400">
         <icon :path="icons.mdiBell" :h="'h-6'" :w="'w-6'" :size="20" />
       </div>

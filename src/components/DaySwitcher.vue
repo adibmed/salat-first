@@ -27,10 +27,7 @@ export default {
 </script>
 
 <template>
-  <div class="w-full bg-gray-500 flex items-center justify-center px-2">
-    <!-- <icon :path="icons.mdiMapMarker" :w="'w-12'" :h="'h-12'" :size="38" />
-    <span>Khenifra</span> -->
-
+  <div class="w-full bg-gray-700 flex items-center justify-center px-2 py-1.5">
     <button
       @click="previousDay"
       class="w-6 h-12 flex items-center justify-center text-yellow-300 hover:text-yellow-400"

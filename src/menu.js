@@ -1,19 +1,7 @@
-import {
-  mdiAccountCircle,
-  mdiGithub,
-  mdiLock,
-  mdiAlertCircle,
-  mdiMonitorShimmer,
-  mdiSquareEditOutline,
-  mdiHome,
-  mdiViewList,
-  mdiTelevisionGuide,
-  mdiResponsive,
-  mdiPalette,
-} from "@mdi/js";
+import { mdiTwitter, mdiHome, mdiSproutOutline } from "@mdi/js";
 
 export default [
-  "General",
+  "",
   [
     {
       to: "/",
@@ -22,66 +10,18 @@ export default [
       updateMark: true,
     },
     {
-      to: "/forms",
-      label: "Forms",
-      icon: mdiSquareEditOutline,
-    },
-    {
-      to: "/ui",
-      label: "UI",
-      icon: mdiTelevisionGuide,
-    },
-    {
-      to: "/responsive",
-      label: "Responsive",
-      icon: mdiResponsive,
-    },
-    {
       to: "/",
-      label: "Styles",
-      icon: mdiPalette,
-    },
-    {
-      to: "/profile",
-      label: "Profile",
-      icon: mdiAccountCircle,
-    },
-    {
-      to: "/login",
-      label: "Login",
-      icon: mdiLock,
-    },
-    {
-      to: "/error",
-      label: "Error",
-      icon: mdiAlertCircle,
-    },
-    {
-      label: "Submenus",
-      subLabel: "Submenus Example",
-      icon: mdiViewList,
-      menu: [
-        {
-          label: "Sub-item One",
-        },
-        {
-          label: "Sub-item Two",
-        },
-      ],
+      label: "About",
+      icon: mdiSproutOutline,
+      updateMark: true,
     },
   ],
   "About",
   [
     {
-      href: "https://justboil.me/tailwind-admin-templates/vue-dashboard/",
-      label: "Premium version",
-      icon: mdiMonitorShimmer,
-      target: "_blank",
-    },
-    {
-      href: "https://github.com/justboil/admin-one-vue-tailwind",
-      label: "GitHub",
-      icon: mdiGithub,
+      href: "https://twitter.com/adibe_mohammed",
+      label: "Author",
+      icon: mdiTwitter,
       target: "_blank",
     },
   ],

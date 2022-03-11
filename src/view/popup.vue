@@ -41,6 +41,6 @@ export default {
 
 <style>
 .default {
-  height: 600px;
+  max-height: 750px;
 }
 </style>

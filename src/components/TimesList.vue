@@ -9,10 +9,6 @@ export default {
   computed: {
     ...mapState(useSalatStore, ["times"]),
   },
-
-  mounted() {
-    console.log();
-  },
 };
 </script>
 

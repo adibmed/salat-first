@@ -38,10 +38,6 @@ export default {
     asideMenuItemActiveStyle() {
       return "font-bold text-black";
     },
-
-    asideMenuItemInactiveStyle() {
-      return "";
-    },
   },
 
   mounted() {
@@ -68,28 +64,21 @@ export default {
       custom
       @click="menuClick"
     >
-      <span class="flex items-center">
+      <div class="flex items-center">
         <icon
           v-if="item.icon"
           :path="item.icon"
           class="flex-none"
-          :class="[
-            isExactActive
-              ? asideMenuItemActiveStyle
-              : asideMenuItemInactiveStyle,
-          ]"
+          :class="[isExactActive ? asideMenuItemActiveStyle : '']"
           w="w-12"
         />
-        <span
-          class="grow"
-          :class="[
-            isExactActive
-              ? asideMenuItemActiveStyle
-              : asideMenuItemInactiveStyle,
-          ]"
-          >{{ item.label }}</span
+        <div
+          class="-mb-1"
+          :class="[isExactActive ? asideMenuItemActiveStyle : '']"
         >
-      </span>
+          {{ item.label }}
+        </div>
+      </div>
     </component>
   </li>
 </template>
