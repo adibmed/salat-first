@@ -11,8 +11,8 @@ export default {
 </script>
 
 <template>
-  <div class="h-40 w-full bg-white relative" :style="headerStyle">
-    <div class="flex flex-col items-center justify-center">
+  <div class="h-36 w-full bg-white relative" :style="headerStyle">
+    <div class="h-full w-full flex flex-col items-center pt-8">
       <div class="text-2xl text-white">Al Fajr</div>
       <div class="text-2xl text-white">-02:35:13</div>
     </div>
