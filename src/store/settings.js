@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import Repository from "../repositories/RepositoryFactory";
 const SalatRepository = Repository.get("salat");
 
-export const useSettingsStore = defineStore("main", {
+export const useSettingsStore = defineStore("settings", {
   state: () => {
     return {
       cities: [],

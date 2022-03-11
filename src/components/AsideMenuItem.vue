@@ -1,10 +1,20 @@
 <script>
+import Icon from "./Icon.vue";
 export default {
+  components: {
+    Icon,
+  },
   props: {
     item: {
       type: Object,
       required: true,
     },
+  },
+
+  data() {
+    return {
+      isExactActive: false,
+    };
   },
   computed: {
     componentIs() {
@@ -26,12 +36,16 @@ export default {
     },
 
     asideMenuItemActiveStyle() {
-      return "bg-red-500";
+      return "font-bold text-black";
     },
 
     asideMenuItemInactiveStyle() {
-      return "bg-green-500";
+      return "";
     },
+  },
+
+  mounted() {
+    this.isExactActive = this.$refs.item.to === this.$route.path;
   },
 
   methods: {
@@ -46,34 +60,36 @@ export default {
   <li>
     <component
       :is="componentIs"
-      v-slot="vSlot"
+      ref="item"
       :to="itemTo"
       :href="itemHref"
       :target="itemTarget"
-      class="flex cursor-pointer dark:hover:bg-gray-700/50"
-      :class="[asideMenuItemStyle, isSubmenuList ? 'p-3 text-sm' : 'py-2']"
+      class="flex items-center cursor-pointer"
+      custom
       @click="menuClick"
     >
-      <icon
-        v-if="item.icon"
-        :path="item.icon"
-        class="flex-none"
-        :class="[
-          vSlot && vSlot.isExactActive
-            ? asideMenuItemActiveStyle
-            : asideMenuItemInactiveStyle,
-        ]"
-        w="w-12"
-      />
-      <span
-        class="grow"
-        :class="[
-          vSlot && vSlot.isExactActive
-            ? asideMenuItemActiveStyle
-            : asideMenuItemInactiveStyle,
-        ]"
-        >{{ item.label }}</span
-      >
+      <span class="flex items-center">
+        <icon
+          v-if="item.icon"
+          :path="item.icon"
+          class="flex-none"
+          :class="[
+            isExactActive
+              ? asideMenuItemActiveStyle
+              : asideMenuItemInactiveStyle,
+          ]"
+          w="w-12"
+        />
+        <span
+          class="grow"
+          :class="[
+            isExactActive
+              ? asideMenuItemActiveStyle
+              : asideMenuItemInactiveStyle,
+          ]"
+          >{{ item.label }}</span
+        >
+      </span>
     </component>
   </li>
 </template>
