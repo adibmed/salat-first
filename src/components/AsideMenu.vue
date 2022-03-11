@@ -43,7 +43,7 @@ export default {
     <aside
       v-show="isAsideOpen"
       id="aside"
-      class="fixed w-60 bg-white border h-full top-0 right-0"
+      class="fixed w-60 bg-white border h-full top-0 right-0 z-50"
     >
       <div class="flex items-center w-full py-2">
         <div class="flex-1 px-3">
