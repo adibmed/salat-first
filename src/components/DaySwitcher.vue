@@ -3,11 +3,14 @@ import Icon from "./Icon.vue";
 import { mdiChevronLeft, mdiChevronRight } from "@mdi/js";
 import { useSalatStore } from "../store/salat";
 import { mapState } from "pinia";
+import { mapActions } from "pinia";
 
 export default {
   components: { Icon },
+
   computed: {
     ...mapState(useSalatStore, ["hijriDate", "gregorianDate"]),
+
     icons() {
       return {
         mdiChevronLeft,
@@ -15,12 +18,16 @@ export default {
       };
     },
   },
+
   methods: {
+    ...mapActions(useSalatStore, ["getNextCalendar", "getPrevCalendar"]),
+
     nextDay() {
-      console.log("nextDay");
+      this.getNextCalendar();
     },
+
     previousDay() {
-      console.log("previousDay");
+      this.getPrevCalendar();
     },
   },
 };

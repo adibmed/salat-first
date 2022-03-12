@@ -13,7 +13,7 @@ export default {
   mounted() {
     setInterval(() => {
       this.counter++;
-    }, 100);
+    }, 1000);
   },
 };
 </script>

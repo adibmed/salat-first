@@ -9,9 +9,16 @@ export default {
   getTimes() {
     return Client.get(resource);
   },
+  getCalendar(month, year) {
+    return Client.get(
+      `http://api.aladhan.com/v1/hijriCalendarByCity?city=London&country=United%20Kingdom&method=2&month=${month}&year=${year}`
+    );
+  },
+
   get() {
     return Client.get(`${resource}`);
   },
+
   getPost(id) {
     return Client.get(`${resource}/${id}`);
   },
