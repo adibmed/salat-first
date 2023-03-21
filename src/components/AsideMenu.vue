@@ -43,9 +43,9 @@ export default {
     <aside
       v-show="isAsideOpen"
       id="aside"
-      class="fixed w-60 bg-white border h-full top-0 right-0 z-50"
+      class="fixed w-60 bg-gray-900 bg-opacity-60 h-full top-0 right-0 z-50"
     >
-      <div class="flex items-center w-full py-2">
+      <div class="flex items-center w-full py-2 text-white">
         <div class="flex-1 px-3">
           <span class="text-lg font-bold">Salaat First</span>
         </div>
@@ -91,5 +91,12 @@ export default {
 .slide-fade-leave-to {
   transform: translateX(230px);
   opacity: 0;
+}
+
+#aside {
+  /* blured background with opacity */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
 }
 </style>

@@ -3,9 +3,15 @@ export default {};
 </script>
 
 <template>
-  <div class="h-full w-full pt-12 bg-gray-900">
-    <div class="text-white">
-      <div>country: asdfasdf</div>
+  <div id="settings" class="h-full w-full pt-12 bg-gray-900">
+    <div class="h-full w-full grid place-content-center">
+      <div class="text-white">coming soon</div>
     </div>
   </div>
 </template>
+
+<style>
+#settings {
+  height: 600px;
+}
+</style>

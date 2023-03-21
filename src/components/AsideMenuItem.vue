@@ -64,7 +64,7 @@ export default {
       custom
       @click="menuClick"
     >
-      <div class="flex items-center">
+      <div class="flex items-center text-white">
         <icon
           v-if="item.icon"
           :path="item.icon"

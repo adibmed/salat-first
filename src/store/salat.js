@@ -5,6 +5,7 @@ const SalatRepository = Repository.get("salat");
 export const useSalatStore = defineStore("salat", {
   state: () => {
     return {
+      isLoadingTimes: false,
       timings: [],
       hijriDate: "",
       currentDay: 28,
@@ -27,14 +28,49 @@ export const useSalatStore = defineStore("salat", {
         }, {});
       return times;
     },
+
+
+    timeToNextSalat: (state) => {
+      const now = new Date();
+      const times = state.times;
+      const myTime = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+      let nextSalat = null;
+
+      for (const time of myTime) {
+        const prayerTime = new Date(`${state.gregorianDate} ${times[time]}`);
+        if (prayerTime > now) {
+          nextSalat = { name: time, time: prayerTime };
+          break;
+        }
+      }
+
+      if (!nextSalat) {
+        return null
+      }
+
+      const diff = nextSalat.time - now;
+      const hours = Math.floor(diff / 3600000); // 3600000 ms in an hours
+      const minutes = Math.floor((diff % 3600000) / 60000); // 60000 ms in a minute
+      const seconds = Math.floor(((diff % 360000) % 60000) / 1000); // 1000 ms in a second
+
+      return {
+        name: nextSalat.name,
+        hours,
+        minutes,
+        seconds,
+      };
+    },
+
   },
 
   actions: {
     async getTodayTimes() {
+      this.isLoadingTimes = true;
       const { data } = await SalatRepository.getTimes();
       this.timings = data.data.timings;
       this.hijriDate = `${data.data.date.hijri.weekday.ar} ${data.data.date.hijri.day} ${data.data.date.hijri.month.ar} ${data.data.date.hijri.year}`;
       this.gregorianDate = `${data.data.date.gregorian.day} ${data.data.date.gregorian.month.en} ${data.data.date.gregorian.year}`;
+      this.isLoadingTimes = false;
     },
 
     async getMonthCalendar(month, year) {
@@ -79,16 +115,12 @@ export const useSalatStore = defineStore("salat", {
         }
 
         this.timings = this.monthCalenday[this.currentDay - 1].timings;
-        this.hijriDate = `${
-          this.monthCalenday[this.currentDay - 1].date.hijri.weekday.ar
-        } ${this.monthCalenday[this.currentDay - 1].date.hijri.day} ${
-          this.monthCalenday[this.currentDay - 1].date.hijri.month.ar
-        } ${this.monthCalenday[this.currentDay - 1].date.hijri.year}`;
-        this.gregorianDate = `${
-          this.monthCalenday[this.currentDay - 1].date.gregorian.day
-        } ${this.monthCalenday[this.currentDay - 1].date.gregorian.month.en} ${
-          this.monthCalenday[this.currentDay - 1].date.gregorian.year
-        }`;
+        this.hijriDate = `${this.monthCalenday[this.currentDay - 1].date.hijri.weekday.ar
+          } ${this.monthCalenday[this.currentDay - 1].date.hijri.day} ${this.monthCalenday[this.currentDay - 1].date.hijri.month.ar
+          } ${this.monthCalenday[this.currentDay - 1].date.hijri.year}`;
+        this.gregorianDate = `${this.monthCalenday[this.currentDay - 1].date.gregorian.day
+          } ${this.monthCalenday[this.currentDay - 1].date.gregorian.month.en} ${this.monthCalenday[this.currentDay - 1].date.gregorian.year
+          }`;
       }
     },
   },
