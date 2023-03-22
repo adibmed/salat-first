@@ -27,7 +27,7 @@ export default {
       class="h-full w-full flex flex-col items-center z-10 absolute top-0 left-0 pt-8"
     >
       <div v-if="!isLoadingTimes" class="text-3xl text-white pb-2">
-        {{ $t(timeToNextSalat.name.toLocaleLowerCase()) }}
+        {{ $t(timeToNextSalat?.name.toLocaleLowerCase()) }}
       </div>
       <div v-else class="text-3xl text-white">...</div>
       <timer />

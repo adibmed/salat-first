@@ -30,6 +30,31 @@ export const useSalatStore = defineStore("salat", {
     },
 
 
+    upComingSalat: (state) => {
+      const now = new Date();
+      const times = state.times;
+      const myTime = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+      let nextSalat = null;
+
+      for (const time of myTime) {
+        const prayerTime = new Date(`${state.gregorianDate} ${times[time]}`);
+        if (prayerTime > now) {
+          nextSalat = { name: time, time: prayerTime };
+          break;
+        }
+      }
+
+      if (!nextSalat) {
+        return null
+      }
+
+      console.log("🔥 ", nextSalat.name)
+      return {
+        name: nextSalat.name,
+      };
+    },
+
+
     timeToNextSalat: (state) => {
       const now = new Date();
       const times = state.times;

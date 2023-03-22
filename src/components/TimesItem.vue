@@ -11,6 +11,10 @@ export default {
       type: String,
       required: true,
     },
+    isActive: {
+      type: Boolean,
+      required: true,
+    },
   },
   components: {
     Icon,
@@ -25,9 +29,6 @@ export default {
 
     translatedTitle() {
       return this.$t(this.title.toLowerCase());
-    },
-    isActive() {
-      return this.time === "06:32";
     },
   },
 };
