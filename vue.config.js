@@ -5,6 +5,11 @@ module.exports = {
       entry: "./src/entry/popup.js",
       title: "Popup",
     },
+
+    options: {
+      entry: "./src/entry/options.js",
+      title: "Options",
+    },
   },
   pluginOptions: {
     browserExtension: {

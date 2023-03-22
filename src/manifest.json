@@ -26,5 +26,7 @@
       "19": "icons/19.png",
       "38": "icons/38.png"
     }
-  }
+  },
+  
+  "options_page": "options.html"
 }
