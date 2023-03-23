@@ -1,24 +1,23 @@
 import { mdiTwitter, mdiHome, mdiSproutOutline } from "@mdi/js";
-import OptionsPage from './view/options.vue';
 
 
 export default [
   [
     {
       to: "/",
-      label: "Home",
+      label: "home",
       icon: mdiHome,
       updateMark: true,
     },
     {
       to: "/about",
-      label: "About",
+      label: "about_us",
       icon: mdiSproutOutline,
       updateMark: true,
     },
     {
       href: "https://twitter.com/realAdibMed",
-      label: "Author",
+      label: "developer",
       icon: mdiTwitter,
       target: "_blank",
     }

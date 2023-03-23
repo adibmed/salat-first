@@ -76,7 +76,7 @@ export default {
           class="-mb-1 text-lg py-2 hover:text-gray-100"
           :class="[isExactActive ? asideMenuItemActiveStyle : '']"
         >
-          {{ item.label }}
+          {{ $t(item.label) }}
         </div>
       </div>
     </component>
