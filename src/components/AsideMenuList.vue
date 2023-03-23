@@ -19,7 +19,7 @@ export default {
 
   methods: {
     menuClick(event, item) {
-      this.$emit("menu-click", event, item);
+      this.$emit("onMenuClick", event, item);
     },
   },
 };
@@ -32,7 +32,7 @@ export default {
       :key="index"
       :item="item"
       :is-submenu-list="isSubmenuList"
-      @menu-click="menuClick"
+      @onMenuClick="menuClick"
     />
   </ul>
 </template>

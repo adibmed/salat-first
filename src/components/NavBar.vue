@@ -31,11 +31,5 @@ export default {
     <button class="text-gray-200 hover:text-white" @click="toggleAsideMenu">
       <icon :path="icons.mdiMenu" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>
-
-    <router-link :to="{ name: 'Settings' }">
-      <button class="text-gray-200 hover:text-white">
-        <icon :path="icons.mdiCogOutline" :h="'w-8'" :w="'w-8'" :size="24" />
-      </button>
-    </router-link>
   </nav>
 </template>

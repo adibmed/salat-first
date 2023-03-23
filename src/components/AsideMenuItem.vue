@@ -36,7 +36,7 @@ export default {
     },
 
     asideMenuItemActiveStyle() {
-      return "font-bold text-black";
+      return "font-bold";
     },
   },
 
@@ -46,7 +46,7 @@ export default {
 
   methods: {
     menuClick(event) {
-      this.$emit("menu-click", event, this.item);
+      this.$emit("onMenuClick", event, this.item);
     },
   },
 };
@@ -60,11 +60,11 @@ export default {
       :to="itemTo"
       :href="itemHref"
       :target="itemTarget"
-      class="flex items-center cursor-pointer"
+      class="flex items-center cursor-pointer bg-gray-700 bg-opacity-0 hover:bg-opacity-10 m-1 rounded"
       custom
       @click="menuClick"
     >
-      <div class="flex items-center text-white">
+      <div @click="menuClick" class="flex items-center text-white">
         <icon
           v-if="item.icon"
           :path="item.icon"
@@ -73,7 +73,7 @@ export default {
           w="w-12"
         />
         <div
-          class="-mb-1"
+          class="-mb-1 text-lg py-2 hover:text-gray-100"
           :class="[isExactActive ? asideMenuItemActiveStyle : '']"
         >
           {{ item.label }}
