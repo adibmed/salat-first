@@ -45,9 +45,7 @@ export default {
 
   methods: {
     saveSettings() {
-      chrome.storage.sync.set({ city: this.city }, () => {
-        console.log("Settings saved");
-      });
+      chrome.storage.sync.set({ city: this.city }, () => {});
     },
   },
   created() {

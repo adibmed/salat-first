@@ -10,7 +10,7 @@ export default {
     ...mapState(useSalatStore, ["timeToNextSalat", "isLoadingTimes"]),
     headerStyle() {
       return `
-      background-image: url('https://unsplash.com/photos/kZ1zThg6G40/download?force=true&w=640');
+      background-image: url('../static/wallpaper.jpg');
       background-size: cover;
       `;
     },
@@ -20,6 +20,13 @@ export default {
 
 <template>
   <div class="h-44 w-full py-4 relative pt-12" :style="headerStyle">
+    <div class="absolute top-0 left-0 w-full h-full z-0">
+      <img
+        class="h-full w-full object-cover"
+        src="../static/wallpaper.jpg"
+        alt="wallpaper"
+      />
+    </div>
     <div
       class="bg-black bg-opacity-10 absolute top-0 left-0 w-full h-full z-0"
     ></div>

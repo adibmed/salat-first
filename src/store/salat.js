@@ -48,7 +48,6 @@ export const useSalatStore = defineStore("salat", {
         return null
       }
 
-      console.log("🔥 ", nextSalat.name)
       return {
         name: nextSalat.name,
       };

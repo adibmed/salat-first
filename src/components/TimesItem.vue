@@ -28,7 +28,7 @@ export default {
     activeClass: () => "bg-gray-700",
 
     translatedTitle() {
-      return this.$t(this.title.toLowerCase());
+      return this.$t(this?.title.toLowerCase());
     },
   },
 };

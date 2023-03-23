@@ -21,9 +21,6 @@ export default {
 <template>
   <div class="bg-gray-900 pt-2">
     <ul>
-      {{
-        title
-      }}
       <times-item
         v-for="(time, key) in times"
         :key="key"

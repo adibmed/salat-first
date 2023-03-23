@@ -34,7 +34,6 @@ export default {
   methods: {
     ...mapActions(useAppStore, ["toggleAsideMenu"]),
     menuClick() {
-      console.log("menuClick");
       this.toggleAsideMenu();
     },
     goToOptionsPage() {
