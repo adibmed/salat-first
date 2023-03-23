@@ -31,6 +31,4 @@ export default {
   delete(id) {
     return Client.delete(`${resource}/${id}`);
   },
-
-  // MANY OTHER ENDPOINT RELATED STUFFS
 };

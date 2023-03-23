@@ -3,12 +3,22 @@ import Icon from "./Icon.vue";
 import { mdiMapMarker } from "@mdi/js";
 export default {
   components: { Icon },
+  data() {
+    return {
+      city: "",
+    };
+  },
   computed: {
     icons() {
       return {
         mdiMapMarker,
       };
     },
+  },
+  created() {
+    chrome.storage.sync.get("city", (data) => {
+      this.city = data.city || "";
+    });
   },
 };
 </script>
@@ -18,6 +28,6 @@ export default {
     <span class="text-yellow-300">
       <icon :path="icons.mdiMapMarker" :w="'w-8'" :h="'h-8'" :size="24"
     /></span>
-    <span class="text-lg">Khenifra</span>
+    <span class="text-lg">{{ city }}</span>
   </div>
 </template>
