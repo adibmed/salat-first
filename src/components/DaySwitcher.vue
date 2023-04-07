@@ -1,36 +1,44 @@
-<script>
-import Icon from "./Icon.vue";
-import { mdiChevronLeft, mdiChevronRight } from "@mdi/js";
-import { useSalatStore } from "../store/salat";
-import { mapState } from "pinia";
-import { mapActions } from "pinia";
+<script lang="js">
+  import Icon from "./Icon.vue";
+  import { mdiChevronLeft, mdiChevronRight } from "@mdi/js";
 
-export default {
-  components: { Icon },
+  import { useSalatStore } from "../store/salat";
+  import { defineComponent, ref, reactive, computed } from "vue";
+  export default defineComponent({
+     components: { Icon },
 
-  computed: {
-    ...mapState(useSalatStore, ["hijriDate", "gregorianDate"]),
-
-    icons() {
-      return {
+    setup() {
+      const icons = reactive({
         mdiChevronLeft,
         mdiChevronRight,
+      });
+
+      const salatStore = useSalatStore();
+      const hijriDate = computed(() => salatStore.hijriDate);
+      const gregorianDate = computed(() => salatStore.gregorianDate);
+      const getNextCalendar = () => salatStore.getNextCalendar();
+      const getPrevCalendar = () => salatStore.getPrevCalendar();
+
+
+
+      const nextDay = () => {
+        getNextCalendar();
+      };
+
+      const previousDay = () => {
+        getPrevCalendar();
+      };
+
+      return {
+        icons,
+        hijriDate,
+        gregorianDate,
+        nextDay,
+        previousDay,
       };
     },
-  },
 
-  methods: {
-    ...mapActions(useSalatStore, ["getNextCalendar", "getPrevCalendar"]),
-
-    nextDay() {
-      this.getNextCalendar();
-    },
-
-    previousDay() {
-      this.getPrevCalendar();
-    },
-  },
-};
+  });
 </script>
 
 <template>

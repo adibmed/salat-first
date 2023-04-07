@@ -1,26 +1,23 @@
 <script>
-import Icon from "./Icon.vue";
-import { mdiMapMarker } from "@mdi/js";
-export default {
-  components: { Icon },
-  data() {
-    return {
-      city: "",
-    };
-  },
-  computed: {
-    icons() {
-      return {
+  import Icon from './Icon.vue';
+  import { mdiMapMarker } from '@mdi/js';
+  import { ref, defineComponent, reactive, computed } from 'vue';
+  export default defineComponent({
+    components: { Icon },
+    setup() {
+      const icons = reactive({
         mdiMapMarker,
+      });
+      const city = ref('');
+      chrome.storage.sync.get('city', (data) => {
+        city.value = data.city || '';
+      });
+      return {
+        icons,
+        city,
       };
     },
-  },
-  created() {
-    chrome.storage.sync.get("city", (data) => {
-      this.city = data.city || "";
-    });
-  },
-};
+  });
 </script>
 
 <template>

@@ -1,21 +1,26 @@
 <script>
-import TimesItem from "./TimesItem.vue";
-import { useSalatStore } from "../store/salat";
-import { mapState } from "pinia";
+  import TimesItem from './TimesItem.vue';
+  import { useSalatStore } from '../store/salat';
+  import { ref, defineComponent, reactive, computed } from 'vue';
 
-export default {
-  components: { TimesItem },
+  export default defineComponent({
+    components: { TimesItem },
 
-  computed: {
-    ...mapState(useSalatStore, ["times", "upComingSalat"]),
-  },
+    setup() {
+      const salatStore = useSalatStore();
+      const times = computed(() => salatStore.times);
+      const upComingSalat = computed(() => salatStore.upComingSalat);
 
-  methods: {
-    isActive(title) {
-      return title === this.upComingSalat.name;
+      const isActive = (title) => {
+        return title === upComingSalat.name;
+      };
+
+      return {
+        times,
+        isActive,
+      };
     },
-  },
-};
+  });
 </script>
 
 <template>

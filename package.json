@@ -3,30 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service build --mode development --watch",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
+    
+    "pack": "vue-cli-service build",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
+    "build": "yarn run remove-evals && yarn run zip",
+    "remove-evals": "node scripts/remove-evals.js",
+    "zip": "node scripts/build-zip.js",
+    "dev": "vite",
+    "preview": "vite preview",
+    "vite_build": "vite build --mode production --outDir dist",
+    "lint": "eslint \"src/**/*.{js,vue}\"",
+    "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
+    "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:style": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
+    "lint:pretty": "pretty-quick --staged"
+
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "core-js": "^3.6.5",
     "pinia": "^2.0.11",
-    "vue": "^2.6.11",
-    "vue-i18n": "^8.26.3",
-    "vue-router": "^3.2.0"
+    "vue": "^3.2.37",
+    "vue-i18n": "^9.1.10",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@mdi/js": "^6.5.95",
-    "@vue/cli-plugin-babel": "~4.5.15",
     "@vue/cli-plugin-eslint": "~4.5.15",
     "@vue/cli-plugin-router": "~4.5.15",
     "@vue/cli-plugin-vuex": "~4.5.15",
-    "@vue/cli-service": "~4.5.15",
-    "@vue/composition-api": "^1.4.9",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "autoprefixer": "^9",
-    "babel-eslint": "^10.1.0",
+    "archiver": "^4.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
@@ -35,8 +42,15 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "vue-cli-plugin-browser-extension": "latest",
-    "vue-cli-plugin-i18n": "~2.3.1",
-    "vue-template-compiler": "^2.6.11"
+
+    "@intlify/unplugin-vue-i18n": "^0.9.2",
+    "@intlify/vite-plugin-vue-i18n": "^5.0.0",
+    
+    
+    "@crxjs/vite-plugin": "^1.0.12",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.14",
+    "vue-tsc": "^0.38.5"
   }
 }

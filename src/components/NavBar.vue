@@ -1,33 +1,30 @@
 <script>
-import Icon from "./Icon.vue";
-import { mdiMenu, mdiCogOutline } from "@mdi/js";
-import { mapActions, mapState } from "pinia";
-import { useAppStore } from "../store/app";
+  import { mdiMenu, mdiCogOutline } from '@mdi/js';
+  import { useAppStore } from '../store/app';
+  import Icon from './Icon.vue';
+  import { ref, defineComponent, reactive, computed } from 'vue';
+  export default defineComponent({
+    components: { Icon },
 
-export default {
-  components: { Icon },
+    setup() {
+      const { isAsideOpen, toggleAsideMenu } = useAppStore();
 
-  computed: {
-    ...mapState(useAppStore, ["isAsideOpen"]),
-
-    icons() {
-      return {
+      const icons = reactive({
         mdiMenu,
         mdiCogOutline,
+      });
+
+      return {
+        icons,
+        isAsideOpen,
+        toggleAsideMenu,
       };
     },
-  },
-
-  methods: {
-    ...mapActions(useAppStore, ["toggleAsideMenu"]),
-  },
-};
+  });
 </script>
 
 <template>
-  <nav
-    class="h-12 flex items-center justify-between absolute top-0 left-0 w-full z-50 px-2"
-  >
+  <nav class="h-12 flex items-center justify-between absolute top-0 left-0 w-full z-50 px-2">
     <button class="text-gray-200 hover:text-white" @click="toggleAsideMenu">
       <icon :path="icons.mdiMenu" :h="'w-8'" :w="'w-8'" :size="24" />
     </button>
