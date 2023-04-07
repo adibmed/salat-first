@@ -23,5 +23,7 @@
   "about_us": "من نحن؟",
   "home": "الرئيسية",
   "developer": "المطور",
-  "text": "Arabic"
+  "city": "المدينة",
+  "select_city": "اختر المدينة",
+  "save": "حفظ"
 }

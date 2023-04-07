@@ -21,10 +21,10 @@
 </script>
 
 <template>
-  <div class="w-full flex items-center justify-center text-white py-1">
+  <div class="w-full flex items-center justify-center text-white py-3">
     <span class="text-yellow-300">
       <icon :path="icons.mdiMapMarker" :w="'w-8'" :h="'h-8'" :size="24"
     /></span>
-    <span class="text-lg">{{ city }}</span>
+    <span class="text-lg font-semibold">{{ city.name }}</span>
   </div>
 </template>

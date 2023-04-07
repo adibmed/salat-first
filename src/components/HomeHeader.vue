@@ -31,7 +31,7 @@
     <div class="absolute top-0 left-0 w-full h-full z-0">
       <img class="h-full w-full object-cover" src="../static/wallpaper.jpg" alt="wallpaper" />
     </div>
-    <div class="bg-black bg-opacity-10 absolute top-0 left-0 w-full h-full z-0"></div>
+    <div class="bg-black bg-opacity-20 absolute top-0 left-0 w-full h-full z-0"></div>
     <div class="h-full w-full flex flex-col items-center z-10 absolute top-0 left-0 pt-8">
       <div v-if="!isLoadingTimes" class="text-3xl text-white pb-2">
         {{ $t(timeToNextSalat?.name.toLocaleLowerCase()) }}
