@@ -53,7 +53,7 @@
       <div id="aside" class="w-60 h-full bg-gray-900 bg-opacity-90 flex flex-col">
         <div class="flex items-center w-full py-2 text-white">
           <div class="flex-1 px-3">
-            <span class="text-lg font-bold">Salaat First</span>
+            <span class="text-xs text-yellow-400 font-bold">{{ $t('app_name') }}</span>
           </div>
           <button class="p-1" @click="toggleAsideMenu">
             <icon :path="icons.mdiClose" :h="'h-8'" :w="'w-8'" :size="24" />
