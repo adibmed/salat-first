@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "الرباط",
+    "name_en": "Rabat",
     "long_d": 6,
     "long_m": 51,
     "lat_d": 34,
@@ -11,6 +12,7 @@
   {
     "id": 2,
     "name": "الخميسات",
+    "name_en": "Khemisset",
     "long_d": 6,
     "long_m": 5,
     "lat_d": 33,
@@ -20,6 +22,7 @@
   {
     "id": 3,
     "name": "تيفلت",
+    "name_en": "Tiflet",
     "long_d": 6,
     "long_m": 20,
     "lat_d": 33,
@@ -29,6 +32,7 @@
   {
     "id": 4,
     "name": "الرماني",
+    "name_en": "Rmmani",
     "long_d": 6,
     "long_m": 36,
     "lat_d": 33,
@@ -38,6 +42,7 @@
   {
     "id": 5,
     "name": "والماس",
+    "name_en": "Oulmès",
     "long_d": 6,
     "long_m": 0,
     "lat_d": 33,
@@ -47,6 +52,7 @@
   {
     "id": 6,
     "name": "بوزنيقة",
+    "name_en": "Bouznika",
     "long_d": 7,
     "long_m": 10,
     "lat_d": 33,
@@ -56,6 +62,7 @@
   {
     "id": 7,
     "name": "القنيطرة",
+    "name_en": "Kenitra",
     "long_d": 6,
     "long_m": 36,
     "lat_d": 34,
@@ -65,6 +72,7 @@
   {
     "id": 8,
     "name": "سيدي قاسم",
+    "name_en": "Sidi Kacem",
     "long_d": 5,
     "long_m": 43,
     "lat_d": 34,
@@ -74,6 +82,7 @@
   {
     "id": 9,
     "name": "سيدي يحيى الغرب",
+    "name_en": "Sidi Yahya El Gharb",
     "long_d": 6,
     "long_m": 19,
     "lat_d": 34,
@@ -83,6 +92,7 @@
   {
     "id": 10,
     "name": "سيدي سليمان",
+    "name_en": "Sidi Slimane",
     "long_d": 5,
     "long_m": 57,
     "lat_d": 34,
@@ -92,6 +102,7 @@
   {
     "id": 11,
     "name": "سوق أربعاء الغرب",
+    "name_en": "Souk El Arbaa El Gharb",
     "long_d": 6,
     "long_m": 19,
     "lat_d": 34,
@@ -101,6 +112,7 @@
   {
     "id": 12,
     "name": "عرباوة",
+    "name_en": "Arbaoua",
     "long_d": 5,
     "long_m": 56,
     "lat_d": 34,
@@ -110,6 +122,7 @@
   {
     "id": 13,
     "name": "مولاي بوسلهام",
+    "name_en": "Moulay Bousselham",
     "long_d": 6,
     "long_m": 17,
     "lat_d": 34,
@@ -119,6 +132,7 @@
   {
     "id": 14,
     "name": "طنجة",
+    "name_en": "Tangier",
     "long_d": 5,
     "long_m": 49,
     "lat_d": 35,
@@ -128,6 +142,7 @@
   {
     "id": 15,
     "name": "تطوان",
+    "name_en": "Tetouan",
     "long_d": 5,
     "long_m": 22,
     "lat_d": 35,
@@ -137,6 +152,7 @@
   {
     "id": 16,
     "name": "العرائش",
+    "name_en": "El Araich",
     "long_d": 6,
     "long_m": 9,
     "lat_d": 35,
@@ -146,6 +162,7 @@
   {
     "id": 17,
     "name": "أصيلة",
+    "name_en": "Assila",
     "long_d": 6,
     "long_m": 3,
     "lat_d": 35,
@@ -155,6 +172,7 @@
   {
     "id": 18,
     "name": "شفشاون",
+    "name_en": "Chefchaouen",
     "long_d": 5,
     "long_m": 16,
     "lat_d": 35,
@@ -164,6 +182,7 @@
   {
     "id": 19,
     "name": "مرتيل",
+    "name_en": "Martil",
     "long_d": 5,
     "long_m": 17,
     "lat_d": 35,
@@ -173,6 +192,7 @@
   {
     "id": 20,
     "name": "المضيق",
+    "name_en": "El Maadiq",
     "long_d": 5,
     "long_m": 20,
     "lat_d": 35,
@@ -182,6 +202,7 @@
   {
     "id": 21,
     "name": "القصر الكبير",
+    "name_en": "El Qsour El Kebir",
     "long_d": 5,
     "long_m": 55,
     "lat_d": 35,
@@ -191,6 +212,7 @@
   {
     "id": 22,
     "name": "القصر الصغير",
+    "name_en": "El Qsour El Sghir",
     "long_d": 5,
     "long_m": 34,
     "lat_d": 35,
@@ -200,6 +222,7 @@
   {
     "id": 23,
     "name": "الحسيمة",
+    "name_en": "El Hsima",
     "long_d": 3,
     "long_m": 56,
     "lat_d": 35,
@@ -209,6 +232,7 @@
   {
     "id": 24,
     "name": "سبتة",
+    "name_en": "Sbata",
     "long_d": 5,
     "long_m": 21,
     "lat_d": 35,
@@ -218,6 +242,7 @@
   {
     "id": 25,
     "name": "الفنيدق",
+    "name_en": "El Fendik",
     "long_d": 5,
     "long_m": 22,
     "lat_d": 35,
@@ -227,6 +252,7 @@
   {
     "id": 26,
     "name": "الجبهة",
+    "name_en": "El Jbha",
     "long_d": 4,
     "long_m": 40,
     "lat_d": 35,
@@ -236,6 +262,7 @@
   {
     "id": 27,
     "name": "واد لاو",
+    "name_en": "Oued Laou",
     "long_d": 5,
     "long_m": 6,
     "lat_d": 35,
@@ -245,6 +272,7 @@
   {
     "id": 28,
     "name": "باب برد",
+    "name_en": "Bab Berred",
     "long_d": 4,
     "long_m": 53,
     "lat_d": 35,
@@ -254,6 +282,7 @@
   {
     "id": 29,
     "name": "وزان",
+    "name_en": "Ouzane",
     "long_d": 5,
     "long_m": 35,
     "lat_d": 34,
@@ -263,6 +292,7 @@
   {
     "id": 30,
     "name": "بوسكور",
+    "name_en": "Bouskoura",
     "long_d": 3,
     "long_m": 36,
     "lat_d": 34,
@@ -272,6 +302,7 @@
   {
     "id": 31,
     "name": "وجدة",
+    "name_en": "Oujda",
     "long_d": 1,
     "long_m": 56,
     "lat_d": 34,
@@ -281,6 +312,7 @@
   {
     "id": 32,
     "name": "بركان",
+    "name_en": "Berkane",
     "long_d": 2,
     "long_m": 21,
     "lat_d": 34,
@@ -290,6 +322,7 @@
   {
     "id": 33,
     "name": "فكيك",
+    "name_en": "Fikik",
     "long_d": 1,
     "long_m": 14,
     "lat_d": 32,
@@ -299,6 +332,7 @@
   {
     "id": 34,
     "name": "بوعرفة",
+    "name_en": "Bouarfa",
     "long_d": 1,
     "long_m": 58,
     "lat_d": 32,
@@ -308,6 +342,7 @@
   {
     "id": 35,
     "name": "كرسيف",
+    "name_en": "Kersif",
     "long_d": 3,
     "long_m": 22,
     "lat_d": 34,
@@ -317,6 +352,7 @@
   {
     "id": 36,
     "name": "جرادة",
+    "name_en": "Jradat",
     "long_d": 2,
     "long_m": 10,
     "lat_d": 34,
@@ -326,6 +362,7 @@
   {
     "id": 37,
     "name": "عين الشعير",
+    "name_en": "Ain Chok",
     "long_d": 2,
     "long_m": 31,
     "lat_d": 32,
@@ -335,6 +372,7 @@
   {
     "id": 38,
     "name": "تاوريرت",
+    "name_en": "Tawrirt",
     "long_d": 2,
     "long_m": 53,
     "lat_d": 34,
@@ -344,6 +382,7 @@
   {
     "id": 39,
     "name": "الناظور",
+    "name_en": "Nador",
     "long_d": 2,
     "long_m": 56,
     "lat_d": 35,
@@ -353,6 +392,7 @@
   {
     "id": 40,
     "name": "مليلية",
+    "name_en": "Melilia",
     "long_d": 2,
     "long_m": 58,
     "lat_d": 35,
@@ -362,6 +402,7 @@
   {
     "id": 41,
     "name": "دبدو",
+    "name_en": "Dabdo",
     "long_d": 3,
     "long_m": 1,
     "lat_d": 34,
@@ -371,6 +412,7 @@
   {
     "id": 42,
     "name": "سلوان",
+    "name_en": "Slaouan",
     "long_d": 2,
     "long_m": 56,
     "lat_d": 35,
@@ -380,6 +422,7 @@
   {
     "id": 43,
     "name": "بني أنصار",
+    "name_en": "Beni Ansar",
     "long_d": 2,
     "long_m": 55,
     "lat_d": 35,
@@ -389,6 +432,7 @@
   {
     "id": 44,
     "name": "فرخانة",
+    "name_en": "Ferkhana",
     "long_d": 2,
     "long_m": 59,
     "lat_d": 35,
@@ -398,6 +442,7 @@
   {
     "id": 45,
     "name": "تالسينت",
+    "name_en": "Talsint",
     "long_d": 3,
     "long_m": 26,
     "lat_d": 32,
@@ -407,6 +452,7 @@
   {
     "id": 46,
     "name": "تندرارة",
+    "name_en": "Tindouf",
     "long_d": 2,
     "long_m": 0,
     "lat_d": 33,
@@ -416,6 +462,7 @@
   {
     "id": 47,
     "name": "العيون الشرقية",
+    "name_en": "El Ayoun El Sahraoui",
     "long_d": 2,
     "long_m": 30,
     "lat_d": 34,
@@ -425,6 +472,7 @@
   {
     "id": 48,
     "name": "بني ادرار",
+    "name_en": "Beni Idrar",
     "long_d": 1,
     "long_m": 59,
     "lat_d": 34,
@@ -434,6 +482,7 @@
   {
     "id": 49,
     "name": "السعيدية",
+    "name_en": "Saidia",
     "long_d": 2,
     "long_m": 15,
     "lat_d": 35,
@@ -443,6 +492,7 @@
   {
     "id": 50,
     "name": "رأس الماء",
+    "name_en": "Ras El Ma",
     "long_d": 2,
     "long_m": 25,
     "lat_d": 35,
@@ -452,6 +502,7 @@
   {
     "id": 51,
     "name": "تافوغالت",
+    "name_en": "Tafougalt",
     "long_d": 2,
     "long_m": 24,
     "lat_d": 34,
@@ -461,6 +512,7 @@
   {
     "id": 52,
     "name": "فزوان",
+    "name_en": "Fesouan",
     "long_d": 2,
     "long_m": 12,
     "lat_d": 34,
@@ -470,6 +522,7 @@
   {
     "id": 53,
     "name": "أحفير",
+    "name_en": "Ahfir",
     "long_d": 2,
     "long_m": 6,
     "lat_d": 34,
@@ -479,6 +532,7 @@
   {
     "id": 54,
     "name": "زايو",
+    "name_en": "Zaio",
     "long_d": 2,
     "long_m": 43,
     "lat_d": 34,
@@ -488,6 +542,7 @@
   {
     "id": 55,
     "name": "دريوش",
+    "name_en": "Driouch",
     "long_d": 3,
     "long_m": 23,
     "lat_d": 34,
@@ -497,6 +552,7 @@
   {
     "id": 56,
     "name": "بني تجيت",
+    "name_en": "Beni Tijit",
     "long_d": 3,
     "long_m": 28,
     "lat_d": 32,
@@ -506,6 +562,7 @@
   {
     "id": 57,
     "name": "بوعنان",
+    "name_en": "Bouanane",
     "long_d": 3,
     "long_m": 3,
     "lat_d": 32,
@@ -515,6 +572,7 @@
   {
     "id": 58,
     "name": "الدار البيضاء",
+    "name_en": "Casablanca",
     "long_d": 7,
     "long_m": 40,
     "lat_d": 33,
@@ -524,6 +582,7 @@
   {
     "id": 59,
     "name": "المحمدية",
+    "name_en": "Mohammadia",
     "long_d": 7,
     "long_m": 24,
     "lat_d": 33,
@@ -533,6 +592,7 @@
   {
     "id": 60,
     "name": "بن سليمان",
+    "name_en": "Ben Slimane",
     "long_d": 7,
     "long_m": 8,
     "lat_d": 33,
@@ -542,6 +602,7 @@
   {
     "id": 61,
     "name": "سطات",
+    "name_en": "Settat",
     "long_d": 7,
     "long_m": 38,
     "lat_d": 33,
@@ -551,6 +612,7 @@
   {
     "id": 62,
     "name": "الكارة",
+    "name_en": "El Karia",
     "long_d": 7,
     "long_m": 14,
     "lat_d": 33,
@@ -560,6 +622,7 @@
   {
     "id": 63,
     "name": "البروج",
+    "name_en": "El Borouj",
     "long_d": 7,
     "long_m": 12,
     "lat_d": 32,
@@ -569,6 +632,7 @@
   {
     "id": 64,
     "name": "ابن أحمد",
+    "name_en": "Ibn Ahmed",
     "long_d": 7,
     "long_m": 15,
     "lat_d": 33,
@@ -578,6 +642,7 @@
   {
     "id": 65,
     "name": "برشيد",
+    "name_en": "Berschid",
     "long_d": 7,
     "long_m": 35,
     "lat_d": 33,
@@ -587,6 +652,7 @@
   {
     "id": 66,
     "name": "الجديدة",
+    "name_en": "El Jadida",
     "long_d": 8,
     "long_m": 31,
     "lat_d": 33,
@@ -596,6 +662,7 @@
   {
     "id": 67,
     "name": "أزمور",
+    "name_en": "Azmour",
     "long_d": 8,
     "long_m": 21,
     "lat_d": 33,
@@ -605,6 +672,7 @@
   {
     "id": 68,
     "name": "سيدي بنور",
+    "name_en": "Sidi Bennour",
     "long_d": 8,
     "long_m": 26,
     "lat_d": 32,
@@ -614,6 +682,7 @@
   {
     "id": 69,
     "name": "خميس الزمامرة",
+    "name_en": "Khemis Zemamra",
     "long_d": 8,
     "long_m": 43,
     "lat_d": 32,
@@ -623,6 +692,7 @@
   {
     "id": 70,
     "name": "خنيفرة",
+    "name_en": "Khenifra",
     "long_d": 5,
     "long_m": 41,
     "lat_d": 32,
@@ -632,6 +702,7 @@
   {
     "id": 71,
     "name": "مولاي بوعزة",
+    "name_en": "Moulay Bouazza",
     "long_d": 6,
     "long_m": 12,
     "lat_d": 33,
@@ -641,6 +712,7 @@
   {
     "id": 72,
     "name": "زاوية أحنصال",
+    "name_en": "Zaouia Ahansal",
     "long_d": 6,
     "long_m": 7,
     "lat_d": 31,
@@ -650,6 +722,7 @@
   {
     "id": 73,
     "name": "بني ملال",
+    "name_en": "Beni Mellal",
     "long_d": 6,
     "long_m": 22,
     "lat_d": 32,
@@ -659,6 +732,7 @@
   {
     "id": 74,
     "name": "أزيلال",
+    "name_en": "Azilal",
     "long_d": 6,
     "long_m": 35,
     "lat_d": 31,
@@ -668,6 +742,7 @@
   {
     "id": 75,
     "name": "الفقيه بنصالح",
+    "name_en": "El Feqh Ben Saleh",
     "long_d": 6,
     "long_m": 42,
     "lat_d": 32,
@@ -677,6 +752,7 @@
   {
     "id": 76,
     "name": "دمنات",
+    "name_en": "Damanat",
     "long_d": 7,
     "long_m": 1,
     "lat_d": 31,
@@ -686,6 +762,7 @@
   {
     "id": 77,
     "name": "القصيبة",
+    "name_en": "El Ksiba",
     "long_d": 6,
     "long_m": 3,
     "lat_d": 32,
@@ -695,6 +772,7 @@
   {
     "id": 78,
     "name": "قصبة تادلة",
+    "name_en": "Ksiba Tadla",
     "long_d": 6,
     "long_m": 17,
     "lat_d": 32,
@@ -704,6 +782,7 @@
   {
     "id": 79,
     "name": "خريبكة",
+    "name_en": "Khiribga",
     "long_d": 6,
     "long_m": 55,
     "lat_d": 32,
@@ -713,6 +792,7 @@
   {
     "id": 80,
     "name": "وادي زم",
+    "name_en": "Oued Zem",
     "long_d": 6,
     "long_m": 35,
     "lat_d": 32,
@@ -722,6 +802,7 @@
   {
     "id": 81,
     "name": "فاس",
+    "name_en": "Fes",
     "long_d": 5,
     "long_m": 1,
     "lat_d": 34,
@@ -731,6 +812,7 @@
   {
     "id": 82,
     "name": "صفرو",
+    "name_en": "Sefrou",
     "long_d": 4,
     "long_m": 51,
     "lat_d": 33,
@@ -740,6 +822,7 @@
   {
     "id": 83,
     "name": "مولاي يعقوب",
+    "name_en": "Moulay Yacoub",
     "long_d": 5,
     "long_m": 11,
     "lat_d": 34,
@@ -749,6 +832,7 @@
   {
     "id": 84,
     "name": "بولمان",
+    "name_en": "Boulemane",
     "long_d": 4,
     "long_m": 44,
     "lat_d": 33,
@@ -758,6 +842,7 @@
   {
     "id": 85,
     "name": "ميسور",
+    "name_en": "Misser",
     "long_d": 4,
     "long_m": 1,
     "lat_d": 33,
@@ -767,6 +852,7 @@
   {
     "id": 86,
     "name": "رباط الخير",
+    "name_en": "Rabat Al Khair",
     "long_d": 4,
     "long_m": 25,
     "lat_d": 33,
@@ -776,6 +862,7 @@
   {
     "id": 87,
     "name": "المنزل بني يازغة",
+    "name_en": "El Menzel Ben Yazzgha",
     "long_d": 4,
     "long_m": 33,
     "lat_d": 33,
@@ -785,6 +872,7 @@
   {
     "id": 88,
     "name": "إموزار كندر",
+    "name_en": "Imouzzer Kandar",
     "long_d": 5,
     "long_m": 1,
     "lat_d": 33,
@@ -794,6 +882,7 @@
   {
     "id": 89,
     "name": "تازة",
+    "name_en": "Taza",
     "long_d": 4,
     "long_m": 1,
     "lat_d": 34,
@@ -803,6 +892,7 @@
   {
     "id": 90,
     "name": "تاونات",
+    "name_en": "Taounate",
     "long_d": 4,
     "long_m": 39,
     "lat_d": 34,
@@ -812,6 +902,7 @@
   {
     "id": 91,
     "name": "أكنول",
+    "name_en": "Akhnoul",
     "long_d": 3,
     "long_m": 53,
     "lat_d": 34,
@@ -821,6 +912,7 @@
   {
     "id": 92,
     "name": "تيزي وسلي",
+    "name_en": "Tizi Ouzou",
     "long_d": 3,
     "long_m": 48,
     "lat_d": 34,
@@ -830,6 +922,7 @@
   {
     "id": 93,
     "name": "بورد",
+    "name_en": "Bordj",
     "long_d": 4,
     "long_m": 6,
     "lat_d": 34,
@@ -839,6 +932,7 @@
   {
     "id": 94,
     "name": "تاهلة",
+    "name_en": "Tahla",
     "long_d": 4,
     "long_m": 26,
     "lat_d": 34,
@@ -848,6 +942,7 @@
   {
     "id": 95,
     "name": "تيسة",
+    "name_en": "Tissa",
     "long_d": 4,
     "long_m": 41,
     "lat_d": 34,
@@ -857,6 +952,7 @@
   {
     "id": 96,
     "name": "قرية با محمد",
+    "name_en": "Qaryat Baa Mohamed",
     "long_d": 5,
     "long_m": 13,
     "lat_d": 34,
@@ -866,6 +962,7 @@
   {
     "id": 97,
     "name": "كتامة",
+    "name_en": "Ketama",
     "long_d": 4,
     "long_m": 38,
     "lat_d": 34,
@@ -875,6 +972,7 @@
   {
     "id": 98,
     "name": "واد أمليل",
+    "name_en": "Oued Amelil",
     "long_d": 4,
     "long_m": 17,
     "lat_d": 34,
@@ -884,6 +982,7 @@
   {
     "id": 99,
     "name": "مكناس",
+    "name_en": "Meknes",
     "long_d": 5,
     "long_m": 35,
     "lat_d": 33,
@@ -893,6 +992,7 @@
   {
     "id": 100,
     "name": "يفرن",
+    "name_en": "Yfrane",
     "long_d": 5,
     "long_m": 7,
     "lat_d": 33,
@@ -902,6 +1002,7 @@
   {
     "id": 101,
     "name": "الحاجب",
+    "name_en": "El Hajeb",
     "long_d": 5,
     "long_m": 23,
     "lat_d": 33,
@@ -911,6 +1012,7 @@
   {
     "id": 102,
     "name": "زرهون",
+    "name_en": "Zerhoun",
     "long_d": 5,
     "long_m": 32,
     "lat_d": 34,
@@ -920,6 +1022,7 @@
   {
     "id": 103,
     "name": "آزرو",
+    "name_en": "Azrou",
     "long_d": 5,
     "long_m": 14,
     "lat_d": 33,
@@ -929,6 +1032,7 @@
   {
     "id": 104,
     "name": "مراكش",
+    "name_en": "Marrakech",
     "long_d": 8,
     "long_m": 2,
     "lat_d": 31,
@@ -938,6 +1042,7 @@
   {
     "id": 105,
     "name": "قلعة السراغنة",
+    "name_en": "Qal'a Sraghna",
     "long_d": 7,
     "long_m": 25,
     "lat_d": 32,
@@ -947,6 +1052,7 @@
   {
     "id": 106,
     "name": "الصويرة",
+    "name_en": "Essaouira",
     "long_d": 9,
     "long_m": 47,
     "lat_d": 31,
@@ -956,6 +1062,7 @@
   {
     "id": 107,
     "name": "شيشاوة",
+    "name_en": "Chichaoua",
     "long_d": 8,
     "long_m": 46,
     "lat_d": 31,
@@ -965,6 +1072,7 @@
   {
     "id": 108,
     "name": "بنجرير",
+    "name_en": "Benjrir",
     "long_d": 7,
     "long_m": 58,
     "lat_d": 32,
@@ -974,6 +1082,7 @@
   {
     "id": 109,
     "name": "الرحامنة",
+    "name_en": "Rhamna",
     "long_d": 7,
     "long_m": 55,
     "lat_d": 32,
@@ -983,6 +1092,7 @@
   {
     "id": 110,
     "name": "تمنار",
+    "name_en": "Tamanar",
     "long_d": 9,
     "long_m": 41,
     "lat_d": 31,
@@ -992,6 +1102,7 @@
   {
     "id": 111,
     "name": "آسفي",
+    "name_en": "Assafi",
     "long_d": 9,
     "long_m": 15,
     "lat_d": 32,
@@ -1001,6 +1112,7 @@
   {
     "id": 112,
     "name": "الوليدية",
+    "name_en": "El Oulidia",
     "long_d": 9,
     "long_m": 2,
     "lat_d": 32,
@@ -1010,6 +1122,7 @@
   {
     "id": 113,
     "name": "اليوسفية",
+    "name_en": "El Youssoufia",
     "long_d": 8,
     "long_m": 32,
     "lat_d": 32,
@@ -1019,6 +1132,7 @@
   {
     "id": 114,
     "name": "تسلطانت",
+    "name_en": "Tassaltante",
     "long_d": 7,
     "long_m": 57,
     "lat_d": 31,
@@ -1028,6 +1142,7 @@
   {
     "id": 115,
     "name": "تامصلوحت",
+    "name_en": "Tamsoultoute",
     "long_d": 8,
     "long_m": 6,
     "lat_d": 31,
@@ -1037,6 +1152,7 @@
   {
     "id": 116,
     "name": "قطارة",
+    "name_en": "Qatar",
     "long_d": 8,
     "long_m": 10,
     "lat_d": 31,
@@ -1046,6 +1162,7 @@
   {
     "id": 117,
     "name": "أكادير",
+    "name_en": "Akkad",
     "long_d": 9,
     "long_m": 34,
     "lat_d": 30,
@@ -1055,6 +1172,7 @@
   {
     "id": 118,
     "name": "تارودانت",
+    "name_en": "Taroudant",
     "long_d": 8,
     "long_m": 48,
     "lat_d": 30,
@@ -1064,6 +1182,7 @@
   {
     "id": 119,
     "name": "تزنيت",
+    "name_en": "Tiznit",
     "long_d": 9,
     "long_m": 44,
     "lat_d": 29,
@@ -1073,6 +1192,7 @@
   {
     "id": 120,
     "name": "إغرم",
+    "name_en": "Ighrem",
     "long_d": 8,
     "long_m": 28,
     "lat_d": 30,
@@ -1082,6 +1202,7 @@
   {
     "id": 121,
     "name": "تالوين",
+    "name_en": "Talwin",
     "long_d": 7,
     "long_m": 56,
     "lat_d": 30,
@@ -1091,6 +1212,7 @@
   {
     "id": 122,
     "name": "تافراوت",
+    "name_en": "Tafraout",
     "long_d": 8,
     "long_m": 59,
     "lat_d": 29,
@@ -1100,6 +1222,7 @@
   {
     "id": 123,
     "name": "طاطا",
+    "name_en": "Tata",
     "long_d": 7,
     "long_m": 59,
     "lat_d": 29,
@@ -1109,6 +1232,8 @@
   {
     "id": 124,
     "name": "أقا",
+
+    "name_en": "Agha",
     "long_d": 8,
     "long_m": 15,
     "lat_d": 29,
@@ -1118,6 +1243,7 @@
   {
     "id": 125,
     "name": "فم لحصن",
+    "name_en": "Fam Lahlou",
     "long_d": 8,
     "long_m": 54,
     "lat_d": 29,
@@ -1127,6 +1253,7 @@
   {
     "id": 126,
     "name": "بويكرة",
+    "name_en": "Bouyakrare",
     "long_d": 9,
     "long_m": 22,
     "lat_d": 30,
@@ -1136,6 +1263,7 @@
   {
     "id": 127,
     "name": "أولاد تايمة",
+    "name_en": "Oulad Tayma",
     "long_d": 9,
     "long_m": 13,
     "lat_d": 30,
@@ -1145,6 +1273,7 @@
   {
     "id": 128,
     "name": "الرشيدية",
+    "name_en": "Rachidia",
     "long_d": 4,
     "long_m": 27,
     "lat_d": 31,
@@ -1154,6 +1283,7 @@
   {
     "id": 129,
     "name": "الريصاني",
+    "name_en": "Rissani",
     "long_d": 4,
     "long_m": 16,
     "lat_d": 31,
@@ -1163,6 +1293,7 @@
   {
     "id": 130,
     "name": "أرفود",
+    "name_en": "Arfoud",
     "long_d": 4,
     "long_m": 14,
     "lat_d": 31,
@@ -1172,6 +1303,7 @@
   {
     "id": 131,
     "name": "تنديت",
+    "name_en": "Tindit",
     "long_d": 3,
     "long_m": 38,
     "lat_d": 33,
@@ -1181,6 +1313,7 @@
   {
     "id": 132,
     "name": "كلميمة",
+    "name_en": "Klmiima",
     "long_d": 4,
     "long_m": 57,
     "lat_d": 31,
@@ -1190,6 +1323,7 @@
   {
     "id": 133,
     "name": "إملشيل",
+    "name_en": "Imilchil",
     "long_d": 5,
     "long_m": 37,
     "lat_d": 32,
@@ -1199,6 +1333,7 @@
   {
     "id": 134,
     "name": "تنجداد",
+    "name_en": "Tinghir",
     "long_d": 5,
     "long_m": 2,
     "lat_d": 31,
@@ -1208,6 +1343,7 @@
   {
     "id": 135,
     "name": "الريش",
+    "name_en": "Riss",
     "long_d": 4,
     "long_m": 28,
     "lat_d": 32,
@@ -1217,6 +1353,7 @@
   {
     "id": 136,
     "name": "ميدلت",
+    "name_en": "Midelt",
     "long_d": 4,
     "long_m": 45,
     "lat_d": 32,
@@ -1226,6 +1363,7 @@
   {
     "id": 137,
     "name": "زاكورة",
+    "name_en": "Zakoura",
     "long_d": 5,
     "long_m": 51,
     "lat_d": 30,
@@ -1235,6 +1373,7 @@
   {
     "id": 138,
     "name": "ورزازات",
+    "name_en": "Ouarzazate",
     "long_d": 6,
     "long_m": 56,
     "lat_d": 30,
@@ -1244,6 +1383,7 @@
   {
     "id": 139,
     "name": "تنغير",
+    "name_en": "Tinghir",
     "long_d": 5,
     "long_m": 32,
     "lat_d": 31,
@@ -1253,6 +1393,7 @@
   {
     "id": 140,
     "name": "هسكورة",
+    "name_en": "Hasskoura",
     "long_d": 6,
     "long_m": 33,
     "lat_d": 31,
@@ -1262,6 +1403,7 @@
   {
     "id": 141,
     "name": "قلعة مكونة",
+    "name_en": "Qal'a Makouana",
     "long_d": 6,
     "long_m": 9,
     "lat_d": 31,
@@ -1271,6 +1413,7 @@
   {
     "id": 142,
     "name": "أكدز",
+    "name_en": "Akdaz",
     "long_d": 6,
     "long_m": 27,
     "lat_d": 30,
@@ -1280,6 +1423,7 @@
   {
     "id": 143,
     "name": "بومالن دادس",
+    "name_en": "Boumalne Dadès",
     "long_d": 6,
     "long_m": 0,
     "lat_d": 31,
@@ -1289,6 +1433,7 @@
   {
     "id": 144,
     "name": "النيف",
+    "name_en": "Nif",
     "long_d": 5,
     "long_m": 11,
     "lat_d": 31,
@@ -1298,6 +1443,7 @@
   {
     "id": 145,
     "name": "أسول",
+    "name_en": "Assoul",
     "long_d": 5,
     "long_m": 11,
     "lat_d": 31,
@@ -1307,6 +1453,7 @@
   {
     "id": 146,
     "name": "أمسمرير",
+    "name_en": "Amsmerrir",
     "long_d": 5,
     "long_m": 49,
     "lat_d": 31,
@@ -1316,6 +1463,7 @@
   {
     "id": 147,
     "name": "تازارين",
+    "name_en": "Tazarine",
     "long_d": 5,
     "long_m": 34,
     "lat_d": 30,
@@ -1325,6 +1473,7 @@
   {
     "id": 148,
     "name": "سيدي إفني",
+    "name_en": "Sidi Ifni",
     "long_d": 10,
     "long_m": 11,
     "lat_d": 29,
@@ -1334,6 +1483,7 @@
   {
     "id": 149,
     "name": "كلميم",
+    "name_en": "Klmiem",
     "long_d": 10,
     "long_m": 4,
     "lat_d": 28,
@@ -1343,6 +1493,7 @@
   {
     "id": 150,
     "name": "أسا",
+    "name_en": "Asa",
     "long_d": 9,
     "long_m": 27,
     "lat_d": 28,
@@ -1352,6 +1503,7 @@
   {
     "id": 151,
     "name": "الزاك",
+    "name_en": "Zak",
     "long_d": 9,
     "long_m": 18,
     "lat_d": 28,
@@ -1361,6 +1513,7 @@
   {
     "id": 152,
     "name": "طانطان",
+    "name_en": "Tan Tan",
     "long_d": 11,
     "long_m": 7,
     "lat_d": 28,
@@ -1370,6 +1523,7 @@
   {
     "id": 153,
     "name": "بويزكارن",
+    "name_en": "Bouizakarn",
     "long_d": 9,
     "long_m": 44,
     "lat_d": 29,
@@ -1379,6 +1533,7 @@
   {
     "id": 154,
     "name": "المحبس",
+    "name_en": "El Mahboub",
     "long_d": 9,
     "long_m": 3,
     "lat_d": 27,
@@ -1388,6 +1543,7 @@
   {
     "id": 155,
     "name": "لمسيد",
+    "name_en": "Lemsid",
     "long_d": 10,
     "long_m": 48,
     "lat_d": 28,
@@ -1397,6 +1553,7 @@
   {
     "id": 156,
     "name": "العيون",
+    "name_en": "Al Aouin",
     "long_d": 13,
     "long_m": 14,
     "lat_d": 27,
@@ -1406,6 +1563,7 @@
   {
     "id": 157,
     "name": "السمارة",
+    "name_en": "Smarah",
     "long_d": 11,
     "long_m": 41,
     "lat_d": 26,
@@ -1415,6 +1573,7 @@
   {
     "id": 158,
     "name": "بوجدور",
+    "name_en": "Boujdour",
     "long_d": 14,
     "long_m": 32,
     "lat_d": 26,
@@ -1424,6 +1583,7 @@
   {
     "id": 159,
     "name": "طرفاية",
+    "name_en": "Tarfaya",
     "long_d": 12,
     "long_m": 56,
     "lat_d": 27,
@@ -1433,6 +1593,7 @@
   {
     "id": 160,
     "name": "تفاريتي",
+    "name_en": "Tifariti",
     "long_d": 10,
     "long_m": 34,
     "lat_d": 26,
@@ -1442,6 +1603,7 @@
   {
     "id": 161,
     "name": "بوكراع",
+    "name_en": "Boukraa",
     "long_d": 12,
     "long_m": 50,
     "lat_d": 26,
@@ -1451,6 +1613,7 @@
   {
     "id": 162,
     "name": "كلتة زمور",
+    "name_en": "Keltat Zmour",
     "long_d": 12,
     "long_m": 22,
     "lat_d": 25,
@@ -1460,6 +1623,7 @@
   {
     "id": 163,
     "name": "أمكالة",
+    "name_en": "Amkala",
     "long_d": 11,
     "long_m": 24,
     "lat_d": 26,
@@ -1469,6 +1633,7 @@
   {
     "id": 164,
     "name": "أخفنير",
+    "name_en": "Akhfenir",
     "long_d": 12,
     "long_m": 3,
     "lat_d": 28,
@@ -1478,6 +1643,7 @@
   {
     "id": 165,
     "name": "الداخلة",
+    "name_en": "Dakhla",
     "long_d": 15,
     "long_m": 59,
     "lat_d": 23,
@@ -1487,6 +1653,7 @@
   {
     "id": 166,
     "name": "الكويرة",
+    "name_en": "Kouira",
     "long_d": 17,
     "long_m": 6,
     "lat_d": 20,
@@ -1496,6 +1663,7 @@
   {
     "id": 167,
     "name": "أوسرد",
+    "name_en": "Oued Esserd",
     "long_d": 14,
     "long_m": 18,
     "lat_d": 22,
@@ -1505,6 +1673,7 @@
   {
     "id": 168,
     "name": "بئر كندوز",
+    "name_en": "Bir Kandouz",
     "long_d": 16,
     "long_m": 28,
     "lat_d": 21,
@@ -1514,6 +1683,7 @@
   {
     "id": 169,
     "name": "بئر أنزاران",
+    "name_en": "Bir Anzarane",
     "long_d": 14,
     "long_m": 32,
     "lat_d": 23,
@@ -1523,6 +1693,7 @@
   {
     "id": 301,
     "name": "خميس سيدي عبد الجليل",
+    "name_en": "Khmis Sidi Abdellah Jilali",
     "long_d": 4,
     "long_m": 35,
     "lat_d": 34,
@@ -1532,6 +1703,7 @@
   {
     "id": 302,
     "name": "أولاد عياد",
+    "name_en": "Ouled Yaaqoub",
     "long_d": 4,
     "long_m": 36,
     "lat_d": 34,
@@ -1541,6 +1713,7 @@
   {
     "id": 303,
     "name": "تاهلة",
+    "name_en": "Tahla",
     "long_d": 4,
     "long_m": 25,
     "lat_d": 34,
@@ -1550,6 +1723,7 @@
   {
     "id": 304,
     "name": "مطماطة",
+    "name_en": "Matmata",
     "long_d": 4,
     "long_m": 33,
     "lat_d": 34,
@@ -1559,6 +1733,7 @@
   {
     "id": 305,
     "name": "إيمنتانوت",
+    "name_en": "Imintanout",
     "long_d": 8,
     "long_m": 51,
     "lat_d": 31,
@@ -1568,6 +1743,7 @@
   {
     "id": 306,
     "name": "سيدي غانم",
+    "name_en": "Sidi Ghannem",
     "long_d": 9,
     "long_m": 27,
     "lat_d": 31,
@@ -1577,6 +1753,7 @@
   {
     "id": 307,
     "name": "تفنتان",
+    "name_en": "Tafentanoute",
     "long_d": 7,
     "long_m": 31,
     "lat_d": 31,
@@ -1586,6 +1763,7 @@
   {
     "id": 308,
     "name": "آيت القاق",
+    "name_en": "Ait Kacem",
     "long_d": 7,
     "long_m": 47,
     "lat_d": 31,
@@ -1595,6 +1773,7 @@
   {
     "id": 309,
     "name": "أكدال أملشيل",
+    "name_en": "Akdal Amchil",
     "long_d": 5,
     "long_m": 29,
     "lat_d": 32,
@@ -1604,6 +1783,7 @@
   {
     "id": 310,
     "name": "اكودال املشيل ميدلت",
+    "name_en": "Akdal Amchil Middle",
     "long_d": 5,
     "long_m": 29,
     "lat_d": 32,
@@ -1613,6 +1793,7 @@
   {
     "id": 311,
     "name": "أكايوار",
+    "name_en": "Akayouar",
     "long_d": 7,
     "long_m": 49,
     "lat_d": 31,
@@ -1622,6 +1803,7 @@
   {
     "id": 312,
     "name": "عين العودة",
+    "name_en": "Ain El Oudha",
     "long_d": 6,
     "long_m": 47,
     "lat_d": 33,
@@ -1631,6 +1813,7 @@
   {
     "id": 313,
     "name": "أسكين",
+    "name_en": "Askane",
     "long_d": 7,
     "long_m": 46,
     "lat_d": 31,
@@ -1640,6 +1823,7 @@
   {
     "id": 314,
     "name": "آيت ورير",
+    "name_en": "Ait Ourir",
     "long_d": 7,
     "long_m": 39,
     "lat_d": 31,
@@ -1649,6 +1833,7 @@
   {
     "id": 315,
     "name": "زاوية مولاي ابراهيم",
+    "name_en": "Zaouia Moulay Brahim",
     "long_d": 7,
     "long_m": 58,
     "lat_d": 31,
@@ -1658,6 +1843,7 @@
   {
     "id": 316,
     "name": "تولكولت",
+    "name_en": "Toukourt",
     "long_d": 9,
     "long_m": 4,
     "lat_d": 31,
@@ -1667,6 +1853,7 @@
   {
     "id": 317,
     "name": "إيكس",
+    "name_en": "Iks",
     "long_d": 7,
     "long_m": 51,
     "lat_d": 30,
@@ -1676,6 +1863,7 @@
   {
     "id": 318,
     "name": "كرس",
+    "name_en": "Kers",
     "long_d": 7,
     "long_m": 38,
     "lat_d": 31,
@@ -1685,6 +1873,7 @@
   {
     "id": 319,
     "name": "تيسنت",
+    "name_en": "Tissint",
     "long_d": 7,
     "long_m": 18,
     "lat_d": 29,
@@ -1694,6 +1883,7 @@
   {
     "id": 320,
     "name": "فم زكيد",
+    "name_en": "Fam Zekri",
     "long_d": 6,
     "long_m": 52,
     "lat_d": 30,
@@ -1703,6 +1893,7 @@
   {
     "id": 321,
     "name": "قصر إيش",
+    "name_en": "Qasr Iche",
     "long_d": 1,
     "long_m": 1,
     "lat_d": 32,
@@ -1712,6 +1903,7 @@
   {
     "id": 322,
     "name": "إيمين ثلاث",
+    "name_en": "Imint Tlata",
     "long_d": 6,
     "long_m": 32,
     "lat_d": 31,

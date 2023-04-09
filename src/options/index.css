@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;900&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@ html {
   font-family: 'Noto Naskh Arabic', sans-serif;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 4px;
   height: 2px;
 }
@@ -41,4 +41,4 @@ html {
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
-}
+} */
