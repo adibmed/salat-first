@@ -36,8 +36,6 @@
   import locations from '../static/locations.json';
 
   export default {
-
-    
     setup() {
       const city = ref('');
       const cities = reactive(locations);
@@ -47,10 +45,7 @@
         city.value = data.city || '';
       });
 
-      console.log('city', city.value.name);
-
       const saveSettings = () => {
-        console.log('saveSettings', city.value);
         chrome.storage.sync.set({ city: city.value }, () => {});
       };
 

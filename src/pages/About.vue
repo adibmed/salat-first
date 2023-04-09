@@ -16,6 +16,6 @@
 
 <style>
   #about {
-    height: 602px;
+    min-height: 600px;
   }
 </style>

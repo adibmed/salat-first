@@ -13,10 +13,7 @@
   "permissions": [
     "storage"
   ],
-  "host_permissions": [],
-  "optional_host_permissions": [
-    "*://*/*"
-  ],
+  "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "src/popup/index.html",
     "default_title": "Salat First",

@@ -9,6 +9,14 @@ html {
   font-family: 'Noto Naskh Arabic', sans-serif;
 }
 
+body {
+  background: #1b1c26;
+}
+
+#app {
+  min-height: 600px;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 2px;

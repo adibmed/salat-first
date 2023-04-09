@@ -1,5 +1,5 @@
 <template>
-  <div class="default w-96 relative">
+  <div class="h-full w-96 relative">
     <nav-bar />
     <aside-menu :menu="menu" />
     <router-view />
@@ -7,31 +7,22 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent, ref, reactive, computed } from 'vue';
+  import { defineComponent, reactive } from 'vue';
   import NavBar from '../components/NavBar.vue';
   import AsideMenu from '../components/AsideMenu.vue';
   import menuFile from '../menu';
-  import { useSalatStore } from '../store/salat';
 
   export default defineComponent({
     name: 'popupView',
-
     components: { NavBar, AsideMenu },
-
     setup() {
       const menu = reactive(menuFile);
-
-      const { getTodayTimes } = useSalatStore();
-
-      getTodayTimes();
-
       return {
         menu,
       };
     },
   });
 </script>
-
 <style>
   .default {
     max-height: 750px;

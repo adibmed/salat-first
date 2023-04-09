@@ -1,68 +1,76 @@
-import { defineStore, acceptHMRUpdate } from "pinia";
-import Repository from "../repositories/RepositoryFactory";
-const SalatRepository = Repository.get("salat");
+import { defineStore, acceptHMRUpdate } from 'pinia';
+import Repository from '../repositories/RepositoryFactory';
+const SalatRepository = Repository.get('salat');
 
 export const useSalatStore = defineStore({
-  id: "salat",
+  id: 'salat',
   state: () => {
     return {
-      isLoadingTimes: false,
-      timings: [],
-      hijriDate: "",
-      currentDay: 28,
-      gregorianDate: "",
-      currentMonth: 4,
-      currentYear: 1443,
-      monthCalenday: [],
+      isLoaded: false,
+      moroccanTimes: [],
+      nextDayFajr: null,
+      calendarTimes: []
     };
   },
 
   getters: {
-    times: (state) => {
-      var myTime = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha", "Sunrise"];
-
-      const times = Object.keys(state.timings)
-        .filter((key) => myTime.includes(key))
-        .reduce((obj, key) => {
-          obj[key] = state.timings[key];
-          return obj;
-        }, {});
-      return times;
-    },
-
     upComingSalat: (state) => {
       const now = new Date();
-      const times = state.times;
-      const myTime = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+      const times = state.moroccanTimes;
       let nextSalat = null;
 
-      for (const time of myTime) {
-        const prayerTime = new Date(`${state.gregorianDate} ${times[time]}`);
-        if (prayerTime > now) {
-          nextSalat = { name: time, time: prayerTime };
+      for (const time of times) {
+        const prayerTime = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate(),
+          time.time.split(':')[0],
+          time.time.split(':')[1]
+        );
+        if (time.title === 'Chorouq') {
+          continue;
+        }
+
+        if (
+          prayerTime.getHours() > now.getHours() ||
+          (prayerTime.getHours() === now.getHours() && prayerTime.getMinutes() > now.getMinutes())
+        ) {
+          nextSalat = { title: time.title, time: prayerTime };
           break;
         }
       }
 
       if (!nextSalat) {
-        return null;
+        return 'null';
       }
 
       return {
-        name: nextSalat.name,
+        title: nextSalat.title,
       };
     },
 
     timeToNextSalat: (state) => {
       const now = new Date();
-      const times = state.times;
-      const myTime = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+      const times = state.moroccanTimes;
       let nextSalat = null;
 
-      for (const time of myTime) {
-        const prayerTime = new Date(`${state.gregorianDate} ${times[time]}`);
-        if (prayerTime > now) {
-          nextSalat = { name: time, time: prayerTime };
+      for (const time of times) {
+        const prayerTime = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate(),
+          time.time.split(':')[0],
+          time.time.split(':')[1]
+        );
+        if (time.title === 'Chorouq') {
+          continue;
+        }
+
+        if (
+          prayerTime.getHours() > now.getHours() ||
+          (prayerTime.getHours() === now.getHours() && prayerTime.getMinutes() > now.getMinutes())
+        ) {
+          nextSalat = { title: time.title, time: prayerTime };
           break;
         }
       }
@@ -77,7 +85,7 @@ export const useSalatStore = defineStore({
       const seconds = Math.floor(((diff % 360000) % 60000) / 1000); // 1000 ms in a second
 
       return {
-        name: nextSalat.name,
+        title: nextSalat.title,
         hours,
         minutes,
         seconds,
@@ -86,72 +94,35 @@ export const useSalatStore = defineStore({
   },
 
   actions: {
-    async getTodayTimes() {
-      this.isLoadingTimes = true;
-      const { data } = await SalatRepository.getTimes();
-      this.timings = data.data.timings;
-      this.hijriDate = `${data.data.date.hijri.weekday.ar} ${data.data.date.hijri.day} ${data.data.date.hijri.month.ar} ${data.data.date.hijri.year}`;
-      this.gregorianDate = `${data.data.date.gregorian.day} ${data.data.date.gregorian.month.en} ${data.data.date.gregorian.year}`;
-      this.isLoadingTimes = false;
+    getMoroccanTime(city, month, day) {
+      SalatRepository.getTimes(city, month, day)
+        .then((response) => {
+          const times = Object.keys(response.data[0]).map((key) => {
+            return { title: key, time: response.data[0][key] };
+          });
+          this.moroccanTimes = times;
+          this.calendarTimes = times;
+          this.isLoaded = true;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
-
-    async getMonthCalendar(month, year) {
-      const { data } = await SalatRepository.getCalendar(month, year);
-      this.monthCalenday = data.data;
-    },
-
-    getNextCalendar() {
-      this.getCalendar(1);
-    },
-
-    getPrevCalendar() {
-      this.getCalendar(-1);
-    },
-
-    async getCalendar(inc) {
-      // check if the month calendary is not empty
-      if (this.monthCalenday.length === 0) {
-        await this.getMonthCalendar(this.currentMonth, this.currentYear);
-      } else {
-        this.currentDay += inc;
-
-        if (this.currentDay > this.monthCalenday.length) {
-          this.currentDay = 1;
-          this.currentMonth += 1;
-          if (this.currentMonth > 12) {
-            this.currentMonth = 1;
-            this.currentYear += 1;
-          }
-
-          this.getMonthCalendar(this.currentMonth, this.currentYear);
-        }
-
-        if (this.currentDay === 0) {
-          this.currentMonth -= 1;
-          if (this.currentMonth < 1) {
-            this.currentMonth = 12;
-            this.currentYear -= 1;
-          }
-          this.getMonthCalendar(this.currentMonth, this.currentYear);
-          this.currentDay = this.monthCalenday.length;
-        }
-
-        this.timings = this.monthCalenday[this.currentDay - 1].timings;
-        this.hijriDate = `${
-          this.monthCalenday[this.currentDay - 1].date.hijri.weekday.ar
-        } ${this.monthCalenday[this.currentDay - 1].date.hijri.day} ${
-          this.monthCalenday[this.currentDay - 1].date.hijri.month.ar
-        } ${this.monthCalenday[this.currentDay - 1].date.hijri.year}`;
-        this.gregorianDate = `${
-          this.monthCalenday[this.currentDay - 1].date.gregorian.day
-        } ${this.monthCalenday[this.currentDay - 1].date.gregorian.month.en} ${
-          this.monthCalenday[this.currentDay - 1].date.gregorian.year
-        }`;
-      }
+    getCalendarTime(city, month, day) {
+      SalatRepository.getTimes(city, month, day)
+        .then((response) => {
+          const times = Object.keys(response.data[0]).map((key) => {
+            return { title: key, time: response.data[0][key] };
+          });
+          this.calendarTimes = times;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
 });
 
-if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useSalatStore, import.meta.hot));
-}
+// if (import.meta.hot) {
+//   import.meta.hot.accept(acceptHMRUpdate(useSalatStore, import.meta.hot));
+// }
